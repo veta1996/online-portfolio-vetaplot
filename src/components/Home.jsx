@@ -36,7 +36,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                     options={{
                       strings: [
                         "I'm Veta Plotnikova.",
-                        "I'm a Front-end Developer."
+                        "Front-end Developer."
                       ],
                       autoStart: true,
                       loop: true,

@@ -34,7 +34,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       industry: "Real Estate",
       date: "March, 2023",
       url: {
-        name: "www.houzez.com",
+        name: "Click here",
         link: "https://realtor-app-lyart.vercel.app/",
       },
      
@@ -53,7 +53,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       industry: "Online marketplace for short-term homestays and experiences",
       date: "November, 2022",
       url: {
-        name: "www.bnbair.com",
+        name: "Click here",
         link: "https://airbnb2-rho.vercel.app/",
       },
       

@@ -61,7 +61,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-envelope" />
               </span>
-              veta.plotnikova@gmail.com
+              <a href="mailto:veta.plotnikova@gmail.com">veta.plotnikova@gmail.com</a>
             </p>
             <h2
               className={

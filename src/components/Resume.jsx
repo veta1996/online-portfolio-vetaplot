@@ -53,9 +53,11 @@ const Resume = ({ classicHeader, darkTheme }) => {
       },
     {
       yearRange: "Aug 2016- Feb 2017",
-      title: "Software QA Engineer",
+      title: "Software QA Engineer (Intership)",
       place: "QAUBER",
-      desc1: 'Intership'
+      desc1: 'Developed test plans and test cases to ensure thorough coverage of the software being tested.',
+      desc2: 'Executed test cases manually, following the test plan and identifying any defects, issues, or bugs within the system',
+      desc3: 'Documented and tracked defects, including working with developers to resolve issues and verify fixes.'
     },
   ];
 
@@ -129,7 +131,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
                 "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
               }
             >
-              My Education
+              Education
             </h2>
             {educationDetails.length > 0 &&
               educationDetails.map((value, index) => (
@@ -149,9 +151,6 @@ const Resume = ({ classicHeader, darkTheme }) => {
                   <p className={darkTheme ? "text-primary" : "text-danger"}>
                     {value.place}
                   </p>
-                  <ul className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
-                    
-                  </ul>
                 </div>
               ))}
               
@@ -163,7 +162,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
                 "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
               }
             >
-              My Experience
+              Experience
             </h2>
             {experienceDetails.length > 0 &&
               experienceDetails.map((value, index) => (
@@ -201,7 +200,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
             "text-6 fw-600 mt-4 mb-4 " + (darkTheme ? "text-white" : "")
           }
         >
-          My Skills
+          Skills
         </h2>
         <div className="row gx-5">
           {skills.length > 0 &&

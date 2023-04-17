@@ -92,7 +92,8 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                     >
                       Project Info:
                     </h4>
-                    <p className="text-1">{projectDetails?.projectInfo}</p>
+                    <p className="text-1 font-weight-600">
+                      {projectDetails?.projectInfo}</p>
                     <h4
                       className={
                         "text-4 font-weight-600 mt-4" +

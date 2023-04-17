@@ -56,11 +56,12 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 }
               >
                 <li>
-                  <span className="fw-600 me-2">Name:</span>Veta Plotnikova
+                  <span className="fw-600 me-2">Email:</span>
+                  <a href="mailto:veta.plotnikova@gmail.com">veta.plotnikova@gmail.com</a>
                 </li>
                 <li>
-                  <span className="fw-600 me-2">Email:</span>
-                  <a href="mailto:chat@simone.com">veta.plotnikova@gmail.com</a>
+                  <span className="fw-600 me-2">Tel number:</span>
+                  +1(415)316-89-23
                 </li>
   
                 <li className="border-0">
