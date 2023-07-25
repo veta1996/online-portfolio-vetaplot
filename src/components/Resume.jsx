@@ -10,7 +10,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
     },
     {
       yearRange: "2013 - 2016",
-      title: "Linguist. Teacher of 2 foreign languages",
+      title: "Bachelor's degree in Informatics and Applied Linguistics.",
       place: "Minsk State Linguistic University",
     },
     
@@ -21,7 +21,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
     {
       yearRange: "Mar 2021 - Present  ",
       title: "IT Project manager",
-      place: "EPAM Systems",
+      place: "EPAM Systems Inc",
       desc1: "Managed and developed internal EPAM tools, focusing on platforms for staffing, finance, and people management.",
       desc2: "Defined project scope, objectives, and deliverables, establishing detailed project plans which included resource allocation and budget estimations .",
       desc3: "Collaborated effectively with internal teams to comprehend their requirements, expectations, and priorities. Kept stakeholders informed about project progress while actively seeking and integrating their feedback.",
