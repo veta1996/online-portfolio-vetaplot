@@ -4,43 +4,43 @@ const Services = ({ classicHeader, darkTheme }) => {
   // services details
   const services = [
     {
-      name: "Web Design",
-      desc: "Designing the layout, visual design, and functionality of the website or application that users interact with.",
+      name: "Project Planning and Review",
+      desc: "Work with stakeholders to define project scope, objectives, and requirements. Develop a detailed project plan, including timelines, milestones, and resource allocation.",
       icon: "fas fa-desktop",
     },
     {
-      name: "Coding",
-      desc: "Using programming languages such as HTML, CSS, and JavaScript to create responsive designs that work across different devices and browsers.",
-      icon: "fas fa-code",
+      name: "Task Assignment",
+      desc: "Assign tasks to team members based on their expertise and availability. Monitor task progress and ensure that deadlines are met.",
+      icon: "fa-solid fa-list-check",
     },
     {
-      name: "ReactJS development",
-      desc: "Responsible for creating user interfaces for web applications using the ReactJS library.",
-      icon: "fa-brands fa-react"
+      name: "Team Management",
+      desc: "Build and lead a project team, ensuring that each member understands their role and responsibilities. Provide guidance and support to team members throughout the project lifecycle.",
+      icon: "fa-solid fa-people-group"
     },
     {
-      name: "Application testing",
-      desc: "Testing, debugging, and optimizing the performance of the website or application.",
+      name: "Risk Management",
+      desc: "Identify potential risks and issues that could impact project success. Develop risk mitigation strategies and contingency plans.",
       icon: "fas fa-clone",
     },
     {
-      name: "Redux",
-      desc: "As a ReactJS developer, I implement business logic using Redux. This involves managing the application state, dispatching actions, and handling updates to the state.",
+      name: "Budget Management",
+      desc: "Create and manage the project budget. Track expenses, ensure cost-effectiveness, and justify budget deviations when necessary.",
       icon: "fa-regular fa-rectangle-list",
     },
     {
-      name: "CSS frameworks",
-      desc: "Using various frameworks such as Bootstrap, Tailwind, Material-UI, Styled Components.",
-      icon: "fa-brands fa-css3",
+      name: "Communication",
+      desc: "Facilitate clear and effective communication among team members, stakeholders, and clients. Provide regular project updates and address any concerns or questions.",
+      icon: "fa-solid fa-tty",
     },
     {
-      name: "Git",
-      desc: "Using Git to manage the codebase, collaborate with other developers, and deploy my code to production.",
-      icon: "fa-brands fa-github",
+      name: "Project Management Software Tools",
+      desc: "Jira, Asana, Monday, Microsoft Project, Google Suite, Github",
+      icon: "fa-solid fa-screwdriver-wrench",
     },
     {
-      name: "API",
-      desc: "Often working with APIs to fetch data from servers or send data to servers. This involves using tools like Axios or Fetch to make HTTP requests and handle responses.",
+      name: "Programming Languages & Frameworks",
+      desc: "JavaScript, CSS3, HTML5, ReactJS, Redux, SQL, Bootstrap, SQL",
       icon: "fa-solid fa-code-merge",
     },
   ];

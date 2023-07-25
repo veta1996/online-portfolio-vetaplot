@@ -34,14 +34,12 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Veta Plotnikova,</span> a Front-End
-              Developer
+              I'm <span className="text-primary">Veta Plotnikova,</span> Technical Project Manager
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-            Passionate front-end web developer with 2+ years of experience using JavaScript, HTML5, and CSS3 to build all aspects of the user experience and user interface for client-facing landing pages. Specializes in using ReactJS and Redux to build websites. Highly organized and detail-oriented, constantly learning new technologies and upgrading current skills.
-            </p>
+            Experienced Project Manager with a strong foundation in software engineering. Skilled in leading complex projects from start to finish. Committed to stakeholder satisfaction, adept at requirements gathering, and experienced in diverse project management methodologies and tools. Proficient in several programming languages and frameworks            </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-            Seeking an entry-level Front-end Developer position to grow my career and contribute to the company’s goals.
+            Seeking a Technical Project/Program Manager role to grow my career and contribute to the company’s goals.
 
             </p>
           </div>

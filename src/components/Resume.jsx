@@ -4,14 +4,9 @@ import resumeFile from "../documents/resume.pdf";
 const Resume = ({ classicHeader, darkTheme }) => {
   const educationDetails = [
     {
-      yearRange: "Sept 2020 - Jan 2021",
+      yearRange: "Sept 2019 - Jan 2020",
       title: "Full Stack Web Developer",
       place: "Coding Bootcamp <Coding Dojo>",
-    },
-    {
-      yearRange: "June - Sept 2016",
-      title: 'Software QA Tester',
-      place: "Portnov Computer School",
     },
     {
       yearRange: "2013 - 2016",
@@ -25,43 +20,159 @@ const Resume = ({ classicHeader, darkTheme }) => {
   const experienceDetails = [
     {
       yearRange: "Mar 2021 - Present  ",
-      title: "Front-End Developer",
+      title: "IT Project manager",
       place: "EPAM Systems",
-      desc1: "Developed and maintained React JS web applications for the internal company tools and portals, including bug fixes, enhancements, and new features",
-      desc2: 'Strong web development skills with HTML/HTML5, CSS/CSS3, Less/Sass, Bootstrap, Material UI, JavaScript (ES6/ES5), ReactJS, Redux, AJAX, JSON',
-      desc3: 'Creating responsive web pages and flows that can be viewed on mobile as well as a desktop by using Media Queries, CSS Grid Layout, Flexbox, and Bootstrap',
-      desc4: 'Familiarity with RESTful APIs development and deployment',
-      desc5: 'Working knowledge of Linux, Windows, Docker, AWS, Microsoft Azure, and other platforms',
-      desc6: ' Assisted in troubleshooting software interface and debugging of application codes'
+      desc1: "Managed and developed internal EPAM tools, focusing on platforms for staffing, finance, and people management.",
+      desc2: "Defined project scope, objectives, and deliverables, establishing detailed project plans which included resource allocation and budget estimations .",
+      desc3: "Collaborated effectively with internal teams to comprehend their requirements, expectations, and priorities. Kept stakeholders informed about project progress while actively seeking and integrating their feedback.",
+      desc4: 'Managed project execution, tracked progress, maintained documentation, and promptly resolved implementation issues .',
+      desc5: 'Facilitated regular meetings and presentations to present information, gather feedback, and ensure alignment with project objectives and deliverables.',
     },
     {
-      yearRange: "Oct 2018- Feb 2021 ",
-      title: "Senior Operation Manager",
+      yearRange: "Oct 2019- Feb 2021 ",
+      title: "Operations Manager, Client: Google",
       place: "EPAM Systems",
-      desc1: "Communicate customer issues with the operations team and devise ways of improving the customer experience, including resolving problems and complaints.",
-      desc2: 'Analyze process workflow, employee and space requirements, and equipment layout; implement changes.',
-      desc3: 'Maintain a safe and healthy work environment by establishing, following, and enforcing standards and procedures.'
+      desc1: "Fostering partnerships with Google managers and gathering performance metrics.",
+      desc2: 'Addressing financial inquiries and assisting in creating new roles.',
+      desc3: "Overseeing Google's onboarding and offboarding processes and optimizing resource use.",
+      desc4: "Implementing process improvements and refining EPAM's tools to enhance efficiency ."
     },
     {
-      yearRange: "Mar 2017- Sep 2018",
-      title: "Software QA Engineer",
-      place: "Intresys Inc",
-      desc1: 'Designed, developed, created, and executed test plans and cases based on software requirements and technical understanding of product architecture.',
-      desc2: 'Logged and assigned bugs, keeping track of the defect status.',
-      desc3: 'Made black box testing techniques such as GUI, Functional testing, Interruption testing, System Testing, and UAT.',
-      desc4: 'Tested web-based application on Windows/Mac OS and hybrid mobile applications.'
+      yearRange: "Nov 2018 - Sep 2019",
+      title: "Project Manager",
+      place: "TurboCourt",
+      desc1: 'Maintained regular interaction with stakeholders, understanding requirements and managing project expectations.',
+      desc2: 'Developed and executed comprehensive project plans, including task definition, resource allocation, and timeline estimation.',
+      desc3: 'Monitored project progress, tracking KPIs, and regularly updating stakeholders.',
+      desc4: 'Identified and addressed project issues, proposed corrective actions, and highlighted achievements in detailed reports.'
       },
-    {
-      yearRange: "Aug 2016- Feb 2017",
-      title: "Software QA Engineer (Intership)",
-      place: "QAUBER",
-      desc1: 'Developed test plans and test cases to ensure thorough coverage of the software being tested.',
-      desc2: 'Executed test cases manually, following the test plan and identifying any defects, issues, or bugs within the system',
-      desc3: 'Documented and tracked defects, including working with developers to resolve issues and verify fixes.'
-    },
+    
   ];
 
-  const skills = [
+  
+  return (
+    <section
+      id="resume"
+      className={"section " + (darkTheme ? "bg-dark-1" : "")}
+    >
+      <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
+        {/* Heading */}
+        <div className="position-relative d-flex text-center mb-5">
+          <h2
+            className={
+              "text-24  text-uppercase fw-600 w-100 mb-0 " +
+              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+            }
+          >
+            Summary
+          </h2>
+          <p
+            className={
+              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
+              (darkTheme ? "text-white" : "text-dark")
+            }
+          >
+            {" "}
+            Resume
+            <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
+          </p>
+        </div>
+        {/* Heading end*/}
+        <div className="row gx-5">
+          {/* My Education */}
+          <div className="col-md-5">
+            <h2
+              className={
+                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
+              }
+            >
+              Education
+            </h2>
+            {educationDetails.length > 0 &&
+              educationDetails.map((value, index) => (
+                <div
+                  key={index}
+                  className={
+                    "bg-white  rounded p-4 mb-4 " +
+                    (darkTheme ? "bg-dark" : "bg-white border")
+                  }
+                >
+                  <p className="badge bg-primary text-2 fw-400">
+                    {value.yearRange}
+                  </p>
+                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                    {value.title}
+                  </h3>
+                  <p className={darkTheme ? "text-primary" : "text-danger"}>
+                    {value.place}
+                  </p>
+                </div>
+              ))}
+              
+          </div>
+          {/* My Experience */}
+          <div className="col-md-7">
+            <h2
+              className={
+                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
+              }
+            >
+              Experience
+            </h2>
+            {experienceDetails.length > 0 &&
+              experienceDetails.map((value, index) => (
+                <div
+                  key={index}
+                  className={
+                    "bg-white  rounded p-4 mb-4 " +
+                    (darkTheme ? "bg-dark" : "bg-white border")
+                  }
+                >
+                  <p className="badge bg-primary text-2 fw-400">
+                    {value.yearRange}
+                  </p>
+                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                    {value.title}
+                  </h3>
+                  <p className={darkTheme ? "text-primary" : "text-danger"}>
+                    {value.place}
+                  </p>
+                    <ul>
+                    {value.desc1 ? <li className="text-1" style={{color: '#C0C0C0'}}>{value.desc1}</li> : ''}
+                     {value.desc2 ? <li className="text-1" style={{color: '#C0C0C0'}}>{value.desc2}</li> : ''}
+                     {value.desc3 ? <li className="text-1" style={{color: '#C0C0C0'}}>{value.desc3}</li> : ''}
+                     {value.desc4 ? <li className="text-1" style={{color: '#C0C0C0'}}>{value.desc4}</li> : ''}
+                    {value.desc5 ? <li className="text-1" style={{color: '#C0C0C0'}}>{value.desc5}</li> : ''}
+                    </ul>
+                </div>
+              ))}
+              
+          </div>
+        </div>
+        
+       
+        <div className="text-center mt-5">
+          <a
+            className="btn btn-outline-secondary rounded-pill shadow-none"
+            href={resumeFile}
+            download
+          >
+            Download CV
+            <span className="ms-1">
+              <i className="fas fa-download" />
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Resume;
+
+
+/*
+const skills = [
     {
       name: "JavaScript",
       percent: 80,
@@ -95,158 +206,44 @@ const Resume = ({ classicHeader, darkTheme }) => {
       percent: 90,
     },
   ];
-  return (
-    <section
-      id="resume"
-      className={"section " + (darkTheme ? "bg-dark-1" : "")}
-    >
-      <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
-        {/* Heading */}
-        <div className="position-relative d-flex text-center mb-5">
-          <h2
-            className={
-              "text-24  text-uppercase fw-600 w-100 mb-0 " +
-              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
-            }
-          >
-            Summary
-          </h2>
-          <p
-            className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
-              (darkTheme ? "text-white" : "text-dark")
-            }
-          >
-            {" "}
-            Resume
-            <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
-          </p>
-        </div>
-        {/* Heading end*/}
-        <div className="row gx-5">
-          {/* My Education */}
-          <div className="col-md-6">
-            <h2
-              className={
-                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
-              }
-            >
-              Education
-            </h2>
-            {educationDetails.length > 0 &&
-              educationDetails.map((value, index) => (
-                <div
-                  key={index}
-                  className={
-                    "bg-white  rounded p-4 mb-4 " +
-                    (darkTheme ? "bg-dark" : "bg-white border")
-                  }
-                >
-                  <p className="badge bg-primary text-2 fw-400">
-                    {value.yearRange}
-                  </p>
-                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                    {value.title}
-                  </h3>
-                  <p className={darkTheme ? "text-primary" : "text-danger"}>
-                    {value.place}
-                  </p>
-                </div>
-              ))}
-              
-          </div>
-          {/* My Experience */}
-          <div className="col-md-6">
-            <h2
-              className={
-                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
-              }
-            >
-              Experience
-            </h2>
-            {experienceDetails.length > 0 &&
-              experienceDetails.map((value, index) => (
-                <div
-                  key={index}
-                  className={
-                    "bg-white  rounded p-4 mb-4 " +
-                    (darkTheme ? "bg-dark" : "bg-white border")
-                  }
-                >
-                  <p className="badge bg-primary text-2 fw-400">
-                    {value.yearRange}
-                  </p>
-                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                    {value.title}
-                  </h3>
-                  <p className={darkTheme ? "text-primary" : "text-danger"}>
-                    {value.place}
-                  </p>
-                    <ul>
-                    {value.desc1 ? <li className="text-1">{value.desc1}</li> : ''}
-                     {value.desc2 ? <li className="text-1">{value.desc2}</li> : ''}
-                     {value.desc3 ? <li className="text-1">{value.desc3}</li> : ''}
-                     {value.desc4 ? <li className="text-1">{value.desc4}</li> : ''}
-                    {value.desc5 ? <li className="text-1">{value.desc5}</li> : ''}
-                    </ul>
-                </div>
-              ))}
-              
-          </div>
-        </div>
-        {/* My Skills */}
-        <h2
-          className={
-            "text-6 fw-600 mt-4 mb-4 " + (darkTheme ? "text-white" : "")
-          }
-        >
-          Skills
-        </h2>
-        <div className="row gx-5">
-          {skills.length > 0 &&
-            skills.map((skill, index) => (
-              <div key={index} className="col-md-6">
-                <p
-                  className={
-                    " fw-500 text-start mb-2 " +
-                    (darkTheme ? "text-light" : "text-dark")
-                  }
-                >
-                  {skill.name}{" "}
-                  <span className="float-end">{skill.percent}%</span>
-                </p>
-                <div
-                  className={
-                    "progress progress-sm mb-4 " + (darkTheme ? "bg-dark" : "")
-                  }
-                >
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    style={{ width: skill.percent + "%" }}
-                    aria-valuenow={skill.percent}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                  />
-                </div>
-              </div>
-            ))}
-        </div>
-        <div className="text-center mt-5">
-          <a
-            className="btn btn-outline-secondary rounded-pill shadow-none"
-            href={resumeFile}
-            download
-          >
-            Download CV
-            <span className="ms-1">
-              <i className="fas fa-download" />
-            </span>
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-};
 
-export default Resume;
+   // My skills
+   <h2
+   className={
+     "text-6 fw-600 mt-4 mb-4 " + (darkTheme ? "text-white" : "")
+   }
+ >
+   Skills
+ </h2>
+ <div className="row gx-5">
+   {skills.length > 0 &&
+     skills.map((skill, index) => (
+       <div key={index} className="col-md-6">
+         <p
+           className={
+             " fw-500 text-start mb-2 " +
+             (darkTheme ? "text-light" : "text-dark")
+           }
+         >
+           {skill.name}{" "}
+           <span className="float-end">{skill.percent}%</span>
+         </p>
+         <div
+           className={
+             "progress progress-sm mb-4 " + (darkTheme ? "bg-dark" : "")
+           }
+         >
+           <div
+             className="progress-bar"
+             role="progressbar"
+             style={{ width: skill.percent + "%" }}
+             aria-valuenow={skill.percent}
+             aria-valuemin={0}
+             aria-valuemax={100}
+           />
+         </div>
+       </div>
+     ))}
+ </div>
+
+*/
